@@ -29,27 +29,19 @@ This app skeleton depends on many third party libraries. Thanks to the hard work
 
 The file structure is organized as follows:
 
+````
 *config.xml* - PhoneGap configuration
-
 *index.html* - The app index page
-
 *templates.html* - The templates for additional pages
-
 */app/app.js* - Main JavaScript code for the application
-
 */app/util.js* - Utility functions
-
 */app/routes.js* - Define the controller functions called for each route
-
 */libs* - Included third party libraries
-
 */phonegap/* - Assets needed for PhoneGap compilation, including icons and splash images.
-
 */data/* - Storage for any additional application assets 
-
 */css* - Stylesheets and fonts
-
 */img* - Image assets
+````
 
 ## Application Flow
 
