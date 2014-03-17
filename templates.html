@@ -1,0 +1,38 @@
+<script id="mainTPL" type="text/html">
+	<div id="mainPage">	
+		<header><a href="#/settings" class="btn btnright"><i class="fa fa-align-justify"></i></a><h1>{{title}}</h1></header>
+		<div class="body">
+			<img src="/img/logo.png" class="logo">
+			<p>The main page of the application.</p>
+			<ul>
+				<li>App Name: {{title}}</li>
+				<li>App Version: {{version}}</li>
+				<li>App Author: {{author}}</li>
+			</ul>
+		</div>
+	</div>
+</script>
+
+<script id="settingsTPL" type="text/html">
+	<div id="settingsPage">
+		<header><a href="#/" class="btn"><i class="fa fa-arrow-circle-left"></i> Back</a><h1>App Settings</h1></header>
+		<div class="body">
+			<img src="/img/logo.png" class="logo">
+					
+			<label for="settingA">Setting A</label>
+			<input type="text" id="settingA" class="setting" value="{{settingA}}">
+			
+			<label for="settingB">Setting B</label>
+			<input type="text" id="settingB" class="setting" value="{{settingB}}">
+
+			<label for="settingC">Setting C</label>
+			<input type="text" id="settingC" class="setting" value="{{settingC}}">
+			
+			<div class="aligncenter">
+				<button class="button yellow" onclick="app.saveSettings();">Save</button>
+			</div>			
+			
+		</div>
+	</div>
+</script>
+

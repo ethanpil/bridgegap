@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.appdeveloper.bridgegap"
+        versionCode="1" 
+        version   = "1.0">
+
+    <!-- Basic Info -->
+
+		<name>BridgeGap</name>
+
+		<description>
+			An intuitive Phonegap app skeleton. 
+		</description>
+
+		<author href="http://domain.tld" email="account@domain.tld">
+			Author Name
+		</author>
+		
+    <!-- Preferences -->		
+		<preference name="orientation" value="portrait" />
+		<preference name="phonegap-version" value="3.4.0" />
+
+		
+	<!-- Plugins 		
+		<gap:plugin name="org.apache.cordova.splashscreen"  />
+		<gap:plugin name="org.apache.cordova.inappbrowser"  />  -->
+
+    <!-- Platforms -->		
+		<gap:platform name="android" />
+		
+    <!-- Permissions -->
+		<preference name="permissions" value="none"/> <!-- with NONE, Internet is still enabled -->
+
+	<!-- Icon -->	
+		<icon src="phonegap/icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="phonegap/icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="phonegap/icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="phonegap/icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />		
+		
+	<!-- Splash Screen -->
+		<gap:splash src="splash.png" />	
+		<gap:splash src="phonegap/splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+		<gap:splash src="phonegap/splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+		<gap:splash src="phonegap/splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+		<gap:splash src="phonegap/splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />		
+ 
+	<!-- Cross Domain Access-->			
+		<access origin="*" />	
+		
+	</widget>

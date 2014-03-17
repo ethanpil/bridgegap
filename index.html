@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Starter Application</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+
+	<!-- Style Sheets -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+		
+	<!-- Javascript Libraries -->		
+		<script type="text/javascript" src="phonegap.js" charset="utf-8"></script>
+		<script type="text/javascript" src="libs/fastclick.js" charset="utf-8"></script>
+		<script type="text/javascript" src="libs/jquery/jquery-2.0.3.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="libs/jquery/jquery.transit.min.js" charset="utf-8"></script>		
+		<script type="text/javascript" src="libs/director-v1.2.2.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="libs/ICanHaz.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="libs/pageslider.js" charset="utf-8"></script>
+		
+	<!-- App Code -->
+		<script type="text/javascript" src="app/util.js"></script>
+		<script type="text/javascript" src="app/app.js"></script>
+		<script type="text/javascript" src="app/routes.js"></script>
+		
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+				// are we running in native app or in a browser?
+				window.isphone = false;
+				if(document.URL.indexOf("http://") === -1 && document.URL.indexOf("https://") === -1 && document.URL.indexOf("file://") === -1 ) {
+					window.isphone = true;
+				}
+
+				if( window.isphone ) {
+					document.addEventListener("deviceready", app.startup, false);
+				} else {
+					app.startup();
+				}
+			});
+			
+		</script>
+		
+	</head>
+	<body>
+		<div id="container"></div>
+	</body>
+</html>
