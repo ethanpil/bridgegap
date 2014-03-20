@@ -8,7 +8,8 @@
 			"settingB": "My Second Setting",
 			"settingC": "My Third Setting"
 		},
-		"slider" : "",
+		"data" : {}, //Registry for global values
+		"slider" : "", //Page transition object
 		"startup" : function() {
 				
 			//Load fastclick library
@@ -34,17 +35,9 @@
 				ich.grabTemplates();
 			});	
 			
-			//Perform functions if were on a mobile device
+			//Perform functions on mobile device only
 			if( window.isphone ) {
-				//Add a body class
-				//http://blog.safaribooksonline.com/2012/07/13/phonegap-tip-changing-look-feel-based-on-the-platform/
-				var thePlatform = device.platform.toLowerCase();
-				if (thePlatform.indexOf("iphone") > -1 ||
-					thePlatform.indexOf("ipad") > -1)
-				{
-					thePlatform = "ios";
-				}
-				document.body.className = thePlatform;
+
 			}
 			
 			this.slider = new PageSlider($("#container"));

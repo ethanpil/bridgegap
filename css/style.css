@@ -2,6 +2,189 @@
 BridgeGap
 ************************************************ */
 
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select,
+textarea {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 3px #ddd;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+select:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #129FEA;
+}
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 1px auto #129FEA;
+}
+
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="email"][disabled],
+input[type="url"][disabled],
+input[type="date"][disabled],
+input[type="month"][disabled],
+input[type="time"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="week"][disabled],
+input[type="number"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="color"][disabled],
+select[disabled],
+textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  background: #eee;
+  /* menu hover bg color */
+  color: #777;
+  /* menu text color */
+  border-color: #ccc;
+}
+
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+}
+
+input:focus:invalid:focus,
+textarea:focus:invalid:focus,
+select:focus:invalid:focus {
+  border-color: #e9322d;
+}
+
+input[type="file"]:focus:invalid:focus,
+input[type="radio"]:focus:invalid:focus,
+input[type="checkbox"]:focus:invalid:focus {
+  outline-color: #e9322d;
+}
+
+select {
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+select[multiple] {
+  height: auto;
+}
+
+label {
+  margin: 0.5em 0 0.2em;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0.35em 0 0.75em;
+  border: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  margin-bottom: 0.3em;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.stacked input[type="text"],
+.stacked input[type="password"],
+.stacked input[type="email"],
+.stacked input[type="url"],
+.stacked input[type="date"],
+.stacked input[type="month"],
+.stacked input[type="time"],
+.stacked input[type="datetime"],
+.stacked input[type="datetime-local"],
+.stacked input[type="week"],
+.stacked input[type="number"],
+.stacked input[type="search"],
+.stacked input[type="tel"],
+.stacked input[type="color"],
+.stacked select,
+.stacked label,
+.stacked textarea {
+  display: block;
+  margin: 0.25em 0;
+}
+
+.aligned input,
+.aligned textarea,
+.aligned select {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+.aligned textarea {
+  vertical-align: top;
+}
+
+.aligned fieldset {
+  margin-bottom: 0.5em;
+}
+
+.aligned fieldset label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  margin: 0 1em 0 0;
+}
+
+.aligned .group {
+  margin: 1.5em 0 0 10em;
+}
+
 /* Buttons */
 
 button,
@@ -10,7 +193,7 @@ button,
   border-radius: 0.25em;
   cursor: pointer;
   display: inline-block;
-  font-size: 87.5%;
+  font-size: 110%;
   line-height: 1.5;
   margin: 0.5em 0.5em 0 0;
   padding: 0.25em 1em;
@@ -41,7 +224,7 @@ button.large,
 
 button.small,
 .button.small {
-  font-size: 75%;
+  font-size: 85%;
 }
 
 button.blue,
@@ -108,6 +291,20 @@ button.disabled,
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   padding-right: 0.75em;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
 }
 
 /* Main Layout and Styles */

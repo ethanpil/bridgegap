@@ -2,7 +2,23 @@
 BridgeGap
 ************************************************ */
 
+@import 'scss/forms';
 @import 'scss/buttons';
+
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
 
 /* Main Layout and Styles */
 

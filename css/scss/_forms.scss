@@ -1,0 +1,41 @@
+label {
+    margin: 0.5em 0 0.2em;
+}
+
+input, select {
+	display: inline-block;
+	width: 100%;
+	padding: .25em;
+	font-size: 110%;
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled] {
+    cursor: not-allowed;
+    background-color: #eaeded;
+    color: #cad2d3;
+}
+
+input[readonly],
+select[readonly],
+textarea[readonly] {
+    background: #eee; /* menu hover bg color */
+    color: #777; /* menu text color */
+    border-color: #ccc;
+}
+
+
+fieldset {
+    margin: 0;
+    padding: 0.35em 0 0.75em;
+    border: 0;
+}
+legend {
+    display: block;
+    width: 100%;
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+}
