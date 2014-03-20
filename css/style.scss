@@ -1,0 +1,75 @@
+/*! ************************************************
+BridgeGap
+************************************************ */
+
+@import 'scss/buttons';
+
+/* Main Layout and Styles */
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font: 14px sans-serif;
+    background-color: #EAEAEA;
+}
+
+
+.logo { margin: 0 auto; display: block; }
+img { max-width: 100%; height: auto; }
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 44px;
+    background: #109adc;
+    color: #FFFFFF;
+    border-bottom: 1px solid #0E5895;;
+}
+
+header h1 {
+    font-size: 20px;
+    line-height: 44px;
+    text-align: center;
+    margin: 0px;
+}
+
+header .btn {
+    padding: 0px 12px 0px 12px;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    /*line-height: 28px;*/
+    line-height: 32px;
+    color: #fff;
+    background-color: #0984c6;
+    border: 1px solid #0e5895;
+    border-radius: 2px;
+}
+
+header .btnright {
+
+    right: 8px;
+	left: auto;
+}
+
+
+header a:active {
+    color: #fff;
+    background-color: #0876b1;
+}
+
+.page .body {
+    position: absolute;
+    top: 45px; /* For the header */
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    transition-property: top, bottom;
+    transition-duration: .2s, .2s;
+    transition-timing-function: linear, linear;
+    -webkit-overflow-scrolling: touch;
+	padding: 1em;
+}

@@ -1,0 +1,88 @@
+/* Buttons */
+button, .button {        
+    background-color: #D1D1D1;
+    border-radius: 0.25em;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 87.5%;
+    line-height: 1.5;
+    margin: 0.5em 0.5em 0 0;
+    padding: 0.25em 1em;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+    font-family: sans-serif;
+    
+    &:hover,
+    &:focus {
+       
+    }
+    &:active {
+    }     
+        
+    //Display Styles
+    &.block {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;      
+    }
+    &.pill {
+        border-radius: 99em;
+    }
+    &.large {
+        font-size: 125%;
+    }
+    &.small {
+        font-size: 75%;
+    }
+        
+    //Color Styles
+    &.blue {
+        background-color: #0080ff;
+        color: white;        
+    }
+    &.green {
+        background-color: #00c000;
+        color: white;
+    }
+    
+    &.red {
+        background-color: #c00000;
+        color: white;
+    }
+    &.yellow {
+        background-color: #ffd65e;
+    }
+
+    &.selected {
+       font-weight: bold;
+    }
+        
+    &[disabled],
+    &.disabled {
+        background-color: gainsboro;
+        color: gray;
+        cursor: default;     
+    }          
+}
+/* Button Grouping */
+.button-group {
+    display: table;
+    margin-top: 0.5em;
+    white-space: nowrap;
+    button, .button {
+        display: table-cell;
+        margin: 0;
+        &:not(:first-child) {
+            border-left-width: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            padding-left: 0.75em;
+         }
+         &:not(:last-child) {
+           border-top-right-radius: 0;
+           border-bottom-right-radius: 0;
+           padding-right: 0.75em;
+          }
+    }
+} 

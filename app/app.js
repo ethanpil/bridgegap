@@ -34,13 +34,24 @@
 				ich.grabTemplates();
 			});	
 			
+			//Perform functions if were on a mobile device
+			if( window.isphone ) {
+				//Add a body class
+				//http://blog.safaribooksonline.com/2012/07/13/phonegap-tip-changing-look-feel-based-on-the-platform/
+				var thePlatform = device.platform.toLowerCase();
+				if (thePlatform.indexOf("iphone") > -1 ||
+					thePlatform.indexOf("ipad") > -1)
+				{
+					thePlatform = "ios";
+				}
+				document.body.className = thePlatform;
+			}
+			
 			this.slider = new PageSlider($("#container"));
 			router.init('/');
-
 		},
 		"homePage" : function() { 
-		
-			
+
 			data = {
 				"title": app.name,
 				"version":  app.version,
