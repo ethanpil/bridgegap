@@ -3,12 +3,12 @@
 		"version": "1.0",
 		"author": "Author Name",
 		"settings" : {
-			//Default Settings to be replaced in startup
+			//APP Default Settings to be replaced during app.startup
 			"settingA": "My First Setting",
 			"settingB": "My Second Setting",
 			"settingC": "My Third Setting"
 		},
-		"data" : {}, //Registry for global values
+		"data" : {}, // Data hive for runtime value storage
 		"slider" : "", //Page transition object
 		"startup" : function() {
 				
@@ -22,7 +22,6 @@
 				util.saveData("settings",this.settings);
 			}
 			this.settings = settings;
-			delete settings;	
 
 			//Load external template files
 			$.ajax({
