@@ -44,16 +44,20 @@
 		},
 		"homePage" : function() { 
 
+            //Set the template variables
 			data = {
 				"title": app.name,
 				"version":  app.version,
 				"author":  app.author
 			}
+            
+            //Queue the template and slide to it
 			html = ich.mainTPL(data);
 			app.slider.slidePage(html);
 		},
 		"settingsPage" : function() { 
-		
+            
+            //Queue the template and slide to it
 			html = ich.settingsTPL(app.settings);
 			app.slider.slidePage(html);
 			
